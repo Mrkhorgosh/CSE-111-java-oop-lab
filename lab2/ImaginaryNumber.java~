@@ -1,0 +1,7 @@
+public class ImaginaryNumber{
+  int realPart;
+  int imaginaryPart;
+  public void printNumber(){
+   Syste.out.println(realPart + "+" +imaginaryPart+"i");
+  } 
+}

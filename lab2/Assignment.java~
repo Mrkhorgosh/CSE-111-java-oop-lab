@@ -1,0 +1,5 @@
+public class Assignment{
+  int task;
+  String difficulty;
+  boolean submission;
+}

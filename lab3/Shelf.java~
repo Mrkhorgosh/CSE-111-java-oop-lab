@@ -1,0 +1,18 @@
+public class Shelf{
+  int cap;
+  int bookCount;
+  public void showDetails(){
+    System.out.println("Shelf capacity: "+cap"\nNumber of books: "+bookCount);
+  }
+  public void addBooks(int n){
+    if(cap==0)
+      System.out.println("Zero capacity. Cannot add books.");
+    else if(bookCount+n>cap)
+      System.out.println("Exceeds capacity");
+    else{
+      bookCount+=n;
+      System.out.println(bookCount+" books added to shelf");
+    }
+  }
+   
+}
