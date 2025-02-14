@@ -1,0 +1,14 @@
+public class Song{
+  String title;
+  String artist;
+  int length;
+  Song nextSong;
+  public Song(String title,String artist,int length){
+    this.title=title;
+    this.length=length;
+    this.artist=artist;
+  }
+  public void songInfo(){
+    System.out.println("Title: "+title+"\nArtist: "+artist+"\nLength: "+length+" minutes");
+  }
+}

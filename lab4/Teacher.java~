@@ -1,0 +1,8 @@
+public class Teacher{
+  String name;
+  String ini;
+  public Teacher(String name, String ini){
+   this.name=name;this.ini=ini;
+   System.out.println("A new teacher has been created");
+  }
+}

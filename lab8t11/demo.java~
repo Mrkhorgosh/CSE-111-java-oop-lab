@@ -1,0 +1,9 @@
+public class demo{
+  public boolean t(){
+   int n=false;
+   return n;
+  }
+  public static void main(String[]args){
+    t();
+  }
+} 

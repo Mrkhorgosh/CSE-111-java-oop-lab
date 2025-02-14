@@ -1,0 +1,49 @@
+public class Shape2D{
+  int  len;
+  int breadth;
+  int n1;
+  double  area;
+  boolean sq;
+  boolean req;
+  boolean  tri1;boolean tri2;
+  public Shape2D(){
+    sq=true;
+    this.len=5;
+    System.out.println("A Square has been created with\nlength: "+len);
+  }
+  public Shape2D(int len, int breadth){
+    this.len=len;
+    this.breadth=breadth;
+    System.out.println("A Rectangle has been created with\nlength: "+len+" and breadth: "+breadth);
+  }
+  public shape2D(int len, int breadth,String s){
+   this.len=len;this.breadth=breadth;
+   System.out.println("A Triangle has been created with\nheight: "+len+" and base: "+breadth);
+   tri1=true;
+  }
+  public shape2D(int len, int breadth,int n1 ){
+   this.len=len;this.breadth=breadth;this.n1=n1;
+   System.out.println("A Triangle has been created with\nheight: "+len+" and base: "+breadth);
+   tri2=true;
+  }
+  
+  public void area(){
+    if(sq==true){
+      this.area=len*len;
+      System.out.println("The area of the Square is: "+this.area);
+    }
+    else if(req==true){
+      this.area=len*breath;
+      System.out.println("The area of the Rectangle is: "+this.area);
+    }
+    else if(tri1==true){
+      this.area=0.5*len*breadth;
+      System.out.println("The area of the Triangle is: "+this.area);
+    }
+    else if(tri2==true){
+      int s=len+breadth+n1;
+      this.area=math.sqrt(s*(s-len)*(s-breadth)*(s-n1));
+      System.out.println("The area of the Triangle is: "+this.area);
+    }
+  }
+}

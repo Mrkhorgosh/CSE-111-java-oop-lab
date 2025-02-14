@@ -1,0 +1,49 @@
+public class Student{
+  int id;
+  double cg;
+  boolean cgcheck=false;
+  String[]added;
+  int count;
+  public Student(int id){
+   this.id=id;
+   System.out.println("A new Student with ID +"+this.id+" has been created");
+  }
+  public void addCourse(String s){
+    if(cgcheck==false)
+      System.out.println("Failed to add "+s+ "\nSet CG first");
+    else{
+      this.added[count]=s;
+      count++;
+    }
+  }
+  public void addCourse(String [] courses){
+  
+  }
+  public void removeAllCourses(){
+    count=0;
+  }
+  public void showAdvise(){
+    System.out.println("Student ID: "+id+", CGPA: "+cg);
+    if(count>0)
+   {
+       System.out.println("Added courses are:\n");
+    for(int i=0;i<count;i++){
+      System.out.print(added[i]+" ");
+     }
+    }
+    else
+      System.out.println("No courses added.");
+  }
+  public void storeCG(double d){
+    this.cg=cg;
+    cgcheck=true;
+    if(cg>=3){
+      added=new String[3];
+    }
+    else
+      added=new String[2];
+  }
+  public storeID(int id){
+    this.id=id;
+  }
+}
